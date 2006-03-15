@@ -3,4 +3,6 @@ use strict;
 
 package RT::Extension::MenuBarSearches;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
+
+1;
