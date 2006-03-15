@@ -28,5 +28,5 @@ while ( my $queue = $queues->Next ) {
 % foreach (@queues) {
 <option value="Queue = '<%$_%>' AND (Status = 'new' OR Status = 'open' OR Status = 'stalled')" onClick="goto_queue.submit()"><%$_%></option>
 %}
-</input>
+</select>&nbsp;<input type="submit" value="<&|/l&>Go</&>">
 </form>

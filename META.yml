@@ -8,4 +8,4 @@ no_index:
     - html
     - inc
     - t
-version: 0.02
+version: 0.04
