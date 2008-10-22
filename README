@@ -8,7 +8,9 @@ To install:
     perl Makefile.PL
     make install
 
-Copyright 2006 Best Practical Solutions, LLC
+then add 'RT::Extension::MenubarSearches' to @Plugins in RT_SiteConfig.pm
+
+Copyright 2006-2008 Best Practical Solutions, LLC
 No warranty, so on and so forth. Enjoy. 
 
 For help, write to rt-users@lists.bestpractical.com.
