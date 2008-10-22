@@ -16,17 +16,12 @@ while ( my $queue = $queues->Next ) {
     push @queues, $queue->Name;
 
 }
-
-
-
-
-
 </%init>
-<form method="post" action="/Search/Results.html" name="goto_queue">
-<select name="Query">
-<option value="" onClick="false;"><&|/l&>Show queue</&></option>
+<form method="post" action="/Search/Results.html" name="goto_queue" id="goto_queue">
+<select onchange="document.goto_queue.submit()" name="Query">
+<option value=""><&|/l&>Show queue</&></option>
 % foreach (@queues) {
-<option value="Queue = '<%$_%>' AND (Status = 'new' OR Status = 'open' OR Status = 'stalled')" onClick="goto_queue.submit()"><%$_%></option>
+<option value="Queue = '<%$_%>' AND (Status = 'new' OR Status = 'open' OR Status = 'stalled')"><%$_%></option>
 %}
 </select>&nbsp;<input type="submit" class="button" value="<&|/l&>Go</&>">
 </form>
