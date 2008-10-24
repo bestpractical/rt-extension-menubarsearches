@@ -17,15 +17,6 @@ while ( my $queue = $queues->Next ) {
 
 }
 </%init>
-<style type="text/css">
-#topactions {
- min-width: 51em;
-}
-
-#topactions #goto_queue {
- float: left;
-}
-</style>
 <form method="post" action="/Search/Results.html" name="goto_queue" id="goto_queue">
 <select onchange="document.goto_queue.submit()" name="Query">
 <option value=""><&|/l&>Show queue</&></option>

@@ -1,5 +1,6 @@
 Changes
 html/Callbacks/RT-Extension-MenubarSearches/Elements/Tabs/Default
+html/Callbacks/RT-Extension-MenubarSearches/NoAuth/css/web2/main.css/End
 html/RT-Extension-MenubarSearches/List
 inc/Module/Install.pm
 inc/Module/Install/Base.pm
