@@ -17,11 +17,11 @@ while ( my $queue = $queues->Next ) {
 
 }
 </%init>
-<form method="post" action="/Search/Results.html" name="goto_queue" id="goto_queue">
-<select onchange="document.goto_queue.submit()" name="Query">
+<form method="post" action="/Search/Results.html" name="goto_queue" id="goto_queue" style="position: absolute; right: 35em;">
+<select onchange="document.goto_queue.submit()" name="Query" class="select-queue">
 <option value=""><&|/l&>Show queue</&></option>
 % foreach (@queues) {
 <option value="Queue = '<%$_%>' AND (Status = 'new' OR Status = 'open' OR Status = 'stalled')"><%$_%></option>
 %}
-</select>&nbsp;<input type="submit" class="button" value="<&|/l&>Go</&>">
+</select>&nbsp;<input type="submit" class="button" value="<&|/l&>Go</&>" style="display: none;">
 </form>
