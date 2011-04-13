@@ -17,7 +17,7 @@ while ( my $queue = $queues->Next ) {
 
 }
 </%init>
-<form method="post" action="/Search/Results.html" name="goto_queue" id="goto_queue" 
+<form method="post" action="<%RT->Config->Get('WebPath')%>/Search/Results.html" name="goto_queue" id="goto_queue" 
 %# rt4 doesn't have /Ticket/Elements/Tabs any more
 % if ( $m->comp_exists( '/Ticket/Elements/Tabs' ) ) {
 style="position: absolute; right: 35em;"
