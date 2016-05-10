@@ -1,11 +1,25 @@
-abstract: RT lib/RT/Extension/MenubarSearches.pm Extension
+---
+abstract: 'RT-Extension-MenubarSearches Extension'
+build_requires:
+  ExtUtils::MakeMaker: 6.59
+configure_requires:
+  ExtUtils::MakeMaker: 6.59
 distribution_type: module
-generated_by: Module::Install version 0.63
-license: Perl
+dynamic_config: 1
+generated_by: 'Module::Install version 1.16'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
 name: RT-Extension-MenubarSearches
-no_index: 
-  directory: 
+no_index:
+  directory:
     - html
     - inc
-    - t
-version: 0.05
+requires:
+  perl: 5.8.3
+resources:
+  license: http://dev.perl.org/licenses/
+version: '0.06'
+x_module_install_rtx_version: '0.37'
+x_requires_rt: 4.0.0
