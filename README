@@ -1,16 +1,42 @@
-This simple extension for RT 3.x (Tested on 3.4 and newer) adds a dropdown
-of a user's queues into RT's menubar. Using a tiny bit of javascript,
-selecting one of these queues will automatically jump to a search showing
-new, open and stalled tickets in that queue.
+NAME
+    RT::Extension::MenubarSearches - Adds quick queue search to menu
 
-To install:
+DESCRIPTION
+    This simple extension adds a dropdown of a user's queues into RT's
+    menubar. Using a tiny bit of javascript, selecting one of these queues
+    will automatically jump to a search showing new, open and stalled
+    tickets in that queue.
 
+INSTALLATION
     perl Makefile.PL
+    make
     make install
+        May need root permissions
 
-then add 'RT::Extension::MenubarSearches' to @Plugins in RT_SiteConfig.pm
+    Edit your /opt/rt4/etc/RT_SiteConfig.pm
+        If you are using RT 4.2 or greater, add this line:
 
-Copyright 2006-2008 Best Practical Solutions, LLC
-No warranty, so on and so forth. Enjoy. 
+            Plugin('RT::Extension::MenubarSearches');
 
-For help, write to rt-users@lists.bestpractical.com.
+        For RT 4.0, add this line:
+
+            Set(@Plugins, qw(RT::Extension::MenubarSearches));
+
+        or add RT::Extension::MenubarSearches to your existing @Plugins
+        line.
+
+    Clear your mason cache
+            rm -rf /opt/rt4/var/mason_data/obj
+
+    Restart your webserver
+
+AUTHOR
+    Best Practical Solutions, LLC <modules@bestpractical.com>
+
+LICENSE AND COPYRIGHT
+    This software is Copyright (c) 2016 by Best Practical Solutions
+
+    This is free software, licensed under:
+
+      The GNU General Public License, Version 2, June 1991
+
