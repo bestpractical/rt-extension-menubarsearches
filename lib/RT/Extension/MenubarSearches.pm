@@ -47,7 +47,7 @@
 # END BPS TAGGED BLOCK }}}
 package RT::Extension::MenuBarSearches;
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 use warnings;
 use strict;
