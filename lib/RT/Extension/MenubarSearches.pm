@@ -52,6 +52,8 @@ our $VERSION = '0.07';
 use warnings;
 use strict;
 
+RT->AddStyleSheets( 'menubar-searches.css' );
+
 =head1 NAME
 
 RT::Extension::MenubarSearches - Adds quick queue search to menu

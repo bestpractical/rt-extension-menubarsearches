@@ -16,6 +16,7 @@ no_index:
   directory:
     - html
     - inc
+    - static
 requires:
   perl: 5.8.3
 resources:

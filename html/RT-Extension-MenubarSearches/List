@@ -23,7 +23,7 @@ while ( my $queue = $queues->Next ) {
 style="position: absolute; right: 35em;"
 % }
 >
-<select onchange="document.goto_queue.submit()" name="Query" class="select-queue">
+<select onchange="document.goto_queue.submit()" name="Query" class="select-queue menubar-searches">
 <option value=""><&|/l&>Show queue</&></option>
 % foreach (@queues) {
 <option value="Queue = '<%$_%>' AND (Status = 'new' OR Status = 'open' OR Status = 'stalled')"><%$_%></option>
