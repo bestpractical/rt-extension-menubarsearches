@@ -1,9 +1,0 @@
-% if ( $m->comp_exists( '/Ticket/Elements/Tabs' ) ) {
-#topactions {
- min-width: 51em;
-}
-
-#topactions #goto_queue {
- float: left;
-}
-% }
